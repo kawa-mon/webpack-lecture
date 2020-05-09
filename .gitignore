@@ -80,7 +80,8 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/main.js
+# 一時的に main.js だけにする
 
 # Gatsby files
 .cache/
