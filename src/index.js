@@ -1,5 +1,8 @@
 import _ from 'lodash'
 
+import * as utilities from './utilities'
+console.log('Square Result: ', utilities.Square(3))
+
 const component = () => {
   const element = document.createElement('div')
   const array = ['Hello', 'webpack', '!']
