@@ -49,3 +49,11 @@ Webpack レクチャー
 - webpack によるバンドルと live-server によるサーバ立ち上げを一度に行える**本命ツール**。
 - `$ npm install --save-dev webpack-dev-server@3.1.14` でバージョン固定する。
 - `$ npx webpack-dev-server` で実行できる。
+
+## 開発環境と本番環境について
+
+| Mode           | Development | Production |
+| :------------- | :---------- | :--------- |
+| 圧縮           | 無          | 有         |
+| ビルド時間     | 短          | 長         |
+| パフォーマンス | 悪          | 良         |
