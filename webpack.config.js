@@ -8,4 +8,8 @@ module.exports = {
     filename: 'main.js',
     path: outputPath,
   },
+  devServer: {
+    open: true, // コマンド実行時にブラウザを開くかどうかのオプション
+    contentBase: outputPath, //　サーバ立ち上げ時に開くディレクトリ
+  },
 }
