@@ -20,6 +20,7 @@ Webpack レクチャー
 - 各 JS,CSS,img 等の各モジュールを統合（バンドル）して管理する役割なので **モジュールバンドラー** と呼ばれる。
 - 今回は異なる環境の人にレクチャーするために `$ npm install --save-dev webpack@4.43.0` でバージョン固定する。
 - `--save-dev` オプションをつけることで開発環境だけで動くようになる。
+- `$ npx webpack --mode development` でバンドルできる
 
 ### webpack-cli
 
@@ -32,3 +33,7 @@ Webpack レクチャー
 - `$ npm install --save-dev live-server@1.2.1` でバージョン固定する。
 - `$ ./node_modules/.bin/live-server [ファイルパス]` の相対パスでライブサーバを立ち上げられる。
 - が、面倒くさいということもあり、最新の環境では `$ npx live-server [ファイルパス]` でも可能になっている。
+
+### dist ディレクトリ
+
+- webpack がバンドルした成果物を出力するデフォルトディレクトリ
