@@ -1,7 +1,7 @@
 import _ from 'lodash'
 
-import { Square } from './utilities'
-console.log('Square Result: ', Square(3))
+import * as utilities from './utilities'
+console.log('Square Result: ', utilities.Square(3))
 
 const component = () => {
   const element = document.createElement('div')
