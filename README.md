@@ -34,6 +34,12 @@ Webpack レクチャー
 - `$ ./node_modules/.bin/live-server [ファイルパス]` の相対パスでライブサーバを立ち上げられる。
 - が、面倒くさいということもあり、最新の環境では `$ npx live-server [ファイルパス]` でも可能になっている。
 
-### dist ディレクトリ
+### webpack.config.js
 
-- webpack がバンドルした成果物を出力するデフォルトディレクトリ
+- node.js は CommonJS の規格で動いているので `module.exports` のオブジェクト形式で記載する
+- 出力先はデフォルトでは dist ディレクトリ
+- 出力先は絶対パスで指定するので　 path ライブラリの require が必要
+  - 参考：https://webpack.js.org/configuration/
+  ```
+  the target directory for all output files must be an absolute path (use the Node.js path module)
+  ```
