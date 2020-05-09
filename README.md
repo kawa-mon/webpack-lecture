@@ -11,7 +11,7 @@ Webpack レクチャー
 
 ### package.json
 
-`$ npm init -y` で自動生成される
+`$ npm init -y` で自動生成される。
 
 ### webpack
 
@@ -20,11 +20,11 @@ Webpack レクチャー
 - 各 JS,CSS,img 等の各モジュールを統合（バンドル）して管理する役割なので **モジュールバンドラー** と呼ばれる。
 - 今回は異なる環境の人にレクチャーするために `$ npm install --save-dev webpack@4.43.0` でバージョン固定する。
 - `--save-dev` オプションをつけることで開発環境だけで動くようになる。
-- `$ npx webpack --mode development` でバンドルできる
+- `$ npx webpack --mode development` でバンドルできる。
 
 ### webpack-cli
 
-- コマンドラインから webpack を実行するためのパッケージ
+- コマンドラインから webpack を実行するためのパッケージ。
 - `$ npm install --save-dev webpack-cli@3.3.11` でバージョン固定する。
 
 ### live-server
@@ -36,10 +36,16 @@ Webpack レクチャー
 
 ### webpack.config.js
 
-- node.js は CommonJS の規格で動いているので `module.exports` のオブジェクト形式で記載する
-- 出力先はデフォルトでは dist ディレクトリ
-- 出力先は絶対パスで指定するので　 path ライブラリの require が必要
+- node.js は CommonJS の規格で動いているので `module.exports` のオブジェクト形式で記載する。
+- 出力先はデフォルトでは dist ディレクトリ。
+- 出力先は絶対パスで指定するので　 path ライブラリの require が必要。
   - 参考：https://webpack.js.org/configuration/
   ```
   the target directory for all output files must be an absolute path (use the Node.js path module)
   ```
+
+### webpack-dev-server
+
+- webpack によるバンドルと live-server によるサーバ立ち上げを一度に行える**本命ツール**。
+- `$ npm install --save-dev webpack-dev-server@3.1.14` でバージョン固定する。
+- `$ npx webpack-dev-server` で実行できる。
