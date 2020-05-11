@@ -57,3 +57,26 @@ Webpack レクチャー
 | 圧縮           | 無          | 有         |
 | ビルド時間     | 短          | 長         |
 | パフォーマンス | 悪          | 良         |
+
+## loader について
+
+JavaScript 以外のファイルを JavaScript として扱うためのもの
+
+**A chain is executed in reverse order.** つまり、**下から順に実行される！**
+https://webpack.js.org/concepts/loaders/#loader-features
+
+### css-loader
+
+- CSS ファイルを読み込み可能な形式に変換する
+
+### style-loader
+
+- 読み込み可能な形式に変換された CSS を style タグに生成し直す
+
+### sass-loader
+
+- sass ファイルを読み込む
+
+### node-sass
+
+- sass を css に変換する

@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import './style.scss'
 
 import * as utilities from './utilities'
 console.log('Square Result: ', utilities.Square(3))
@@ -11,3 +12,4 @@ const component = () => {
 }
 
 document.body.appendChild(component())
+document.body.classList.add('bg-color')
