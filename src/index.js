@@ -13,3 +13,14 @@ const component = () => {
 
 document.body.appendChild(component())
 document.body.classList.add('bg-color')
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve()
+  }, 3000)
+})
+
+promise
+  .then(() => console.log('処理が完了しました'))
+  .then(() => console.log('ここも実行される'))
+  .catch(() => console.log('問題発生'))
