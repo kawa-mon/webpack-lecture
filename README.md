@@ -72,3 +72,11 @@ https://webpack.js.org/concepts/loaders/#loader-features
 ### style-loader
 
 - 読み込み可能な形式に変換された CSS を style タグに生成し直す
+
+### sass-loader
+
+- sass ファイルを読み込む
+
+### node-sass
+
+- sass を css に変換する
