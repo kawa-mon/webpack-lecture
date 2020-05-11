@@ -4,6 +4,13 @@ $primary-color: #ff5733;
   background-color: #8dd6f9;
 }
 
-div {
+h1 {
+  font-size: 2em;
+  transition: all 0.3s;
   color: $primary-color;
+
+  &:hover {
+    transform: translateX(50px);
+    color: darkblue;
+  }
 }
