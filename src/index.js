@@ -1,6 +1,5 @@
 import _ from 'lodash'
-import style from './style.css'
-console.log(style.toString())
+import './style.css'
 
 import * as utilities from './utilities'
 console.log('Square Result: ', utilities.Square(3))
