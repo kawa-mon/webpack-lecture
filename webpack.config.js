@@ -20,4 +20,9 @@ module.exports = {
     open: true, // コマンド実行時にブラウザを開くかどうかのオプション
     contentBase: outputPath, //　サーバ立ち上げ時に開くディレクトリ
   },
+  resolve: {
+    alias: {
+      '@scss': path.resolve(__dirname, 'src/scss'),
+    },
+  },
 }

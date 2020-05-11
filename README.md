@@ -60,28 +60,34 @@ Webpack レクチャー
 
 ## loader について
 
-JavaScript 以外のファイルを JavaScript として扱うためのもの
+JavaScript 以外のファイルを JavaScript として扱うためのもの。
 
 **A chain is executed in reverse order.** つまり、**下から順に実行される！**
 https://webpack.js.org/concepts/loaders/#loader-features
 
 ### css-loader
 
-- CSS ファイルを読み込み可能な形式に変換する
+- CSS ファイルを読み込み可能な形式に変換する。
 
 ### style-loader
 
-- 読み込み可能な形式に変換された CSS を style タグに生成し直す
+- 読み込み可能な形式に変換された CSS を style タグに生成し直す。
 
 ### sass-loader
 
-- sass ファイルを読み込む
+- sass ファイルを読み込む。
 
 ### node-sass
 
-- sass を css に変換する
+- sass を css に変換する。
 
 ### postcss-loader
 
-- CSS に autoprefix, stylelint などの処理を加えるときのフレームワーク
-- autoprefix を用いることでトランスパイル時にベンダープレフィックスが付与される
+- CSS に autoprefix, stylelint などの処理を加えるときのフレームワーク。
+- autoprefix を用いることでトランスパイル時にベンダープレフィックスが付与される。
+
+## resolve
+
+- alias オプション：相対パスのエイリアスを指定できる。
+- extensions オプション：記載を省略したい拡張子を指定できる。
+- modules オプションは初期値 `['node_modules']`。配列にパスを追加することで探索先を増やせる。
