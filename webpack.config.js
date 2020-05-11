@@ -3,7 +3,7 @@ const path = require('path')
 const outputPath = path.resolve(__dirname, 'dist')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: 'index.js',
   output: {
     filename: 'main.js',
     path: outputPath,
@@ -25,5 +25,6 @@ module.exports = {
       '@scss': path.resolve(__dirname, 'src/scss'),
     },
     extensions: ['.js', '.scss'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
 }

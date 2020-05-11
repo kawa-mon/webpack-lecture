@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import '@scss/style'
 
-import * as utilities from './js/utilities'
+import * as utilities from 'js/utilities'
 console.log('Square Result: ', utilities.Square(3))
 
 const component = () => {
