@@ -91,3 +91,22 @@ https://webpack.js.org/concepts/loaders/#loader-features
 - alias オプション：相対パスのエイリアスを指定できる。
 - extensions オプション：記載を省略したい拡張子を指定できる。
 - modules オプションは初期値 `['node_modules']`。配列にパスを追加することで探索先を増やせる。
+
+## Plugins
+
+### Babel
+
+- トランスパイラ
+- モダンな JS の種々記法をどんなブラウザでも解釈できる記法に変換してくれる
+
+### babel-loader
+
+- @babel/core API を webpack が叩くためのもの
+
+### @babel/core
+
+- トランスパイルするためのもの
+
+### @babel/preset-env
+
+- ES2015 以上のトランスパイラ
