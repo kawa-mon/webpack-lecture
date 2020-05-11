@@ -62,6 +62,9 @@ Webpack レクチャー
 
 JavaScript 以外のファイルを JavaScript として扱うためのもの
 
+**A chain is executed in reverse order.** つまり、**下から順に実行される！**
+https://webpack.js.org/concepts/loaders/#loader-features
+
 ### css-loader
 
 - CSS ファイルを読み込み可能な形式に変換する
