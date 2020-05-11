@@ -1,4 +1,6 @@
 import _ from 'lodash'
+import style from './style.css'
+console.log(style.toString())
 
 import * as utilities from './utilities'
 console.log('Square Result: ', utilities.Square(3))
@@ -11,3 +13,4 @@ const component = () => {
 }
 
 document.body.appendChild(component())
+document.body.classList.add('bg-color')

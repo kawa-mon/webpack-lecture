@@ -61,3 +61,11 @@ Webpack レクチャー
 ## loader について
 
 JavaScript 以外のファイルを JavaScript として扱うためのもの
+
+### css-loader
+
+- CSS ファイルを読み込み可能な形式に変換する
+
+### style-loader
+
+- 読み込み可能な形式に変換された CSS を style タグに生成し直す
