@@ -14,6 +14,14 @@ module.exports = {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          presets: [['@babel/preset-env']],
+        },
+      },
     ],
   },
   devServer: {
