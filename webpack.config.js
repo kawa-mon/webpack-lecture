@@ -24,5 +24,6 @@ module.exports = {
     alias: {
       '@scss': path.resolve(__dirname, 'src/scss'),
     },
+    extensions: ['.js', '.scss'],
   },
 }
