@@ -80,3 +80,8 @@ https://webpack.js.org/concepts/loaders/#loader-features
 ### node-sass
 
 - sass を css に変換する
+
+### postcss-loader
+
+- CSS に autoprefix, stylelint などの処理を加えるときのフレームワーク
+- autoprefix を用いることでトランスパイル時にベンダープレフィックスが付与される
